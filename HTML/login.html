@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../CSS/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <title>Login</title>
+    <style>
+        .container{
+            border-radius: 15px;
+            box-shadow:15px 20px 0px rgba(0,0,0,0.1)
+        }
+        .container .btn-link{
+            text-decoration: none;
+        }
+        .btn-facebook {background: #3b5998;color: white;opacity:0.9; width: 100%;}
+        .btn-twitter {background: #00aced;color: white;opacity:0.9; width: 100%}
+        .btn-google {background: #c32f10;color: white;opacity:0.9; width: 100%;}
+        .btn-wechat {background: #02c835;color: white;opacity:0.9; width: 100%;}
+        .baror{
+            padding: 2%;
+            height: 10px;
+            width: 100%;
+        }
+        #erus ,#erpass{
+            color: red;
+        }
+    </style>
+    <script>
+    $(Document).ready(function(){
+        var name=$('#user')
+        var pass=$('#pass')
+        function checkname(){
+            if(name.val()==""){
+                $('#erus').html('Vui lòng không để trống')
+                return false;
+            }
+            if(name.val().length < 5){
+                $('#erus').html('UserName phải có trên 5 ký tự và không có ký hiệu đặc biệt')
+                return false;
+            }
+            else{
+                $('#erus').html('(*)')
+                return true;
+            }
+        }
+        name.blur( () => {
+            checkname()
+        })
+        function verifyPassword() {  
+        if(pass.val() == "") {  
+            $('#erpass').html('Vui lòng không để trống')
+           return false;  
+        }  
+        if(pass.val().length < 8) {  
+            $('#erpass').html('Mật khẩu phải > 8 ký tự')
+           return false;  
+        }  
+        if(pass.val().length > 15) {
+            $('#erpass').html('Mật khẩu phải < 15 ký tự')
+           return false;  
+        } else {  
+            $('#erpass').html('(*)')
+            return true
+        }  
+        }
+        pass.blur( () => {
+            verifyPassword()
+        })
+})
+    </script>
+</head>
+<body style="background-color: gainsboro;">
+    <div class="container bg-light" style="margin-top: 2%;">
+        <div class="text-center">
+            <a href="index.html"><img src="../IMG/Banner.png" alt="" height="35%" width="35%" style="padding-bottom: 2%;"></a>
+        </div>
+        <h3 class="text-center" style="padding-top: 1%;">Login</h3>
+        <div class="row justify-content-center">
+			<form action="" class="form" style="width: 95%;">
+                <div class="form-group">
+                    <label>User Name :</label>
+                    <input class="form-control" name="user" id="user" placeholder="Enter your User Name">
+                    <div id="erus"></div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password" name="pass" id="pass" placeholder="Enter your password">
+                    <div id="erpass"></div>
+                </div>
+                <div class="d-block text-right">
+                    <a href="#">Forget your password?</a>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox"><label for="">Keep me in Sign in</label>
+                </div>
+                <div class="form-group justify-content-center text-center p-1">
+                    <a class="btn btn-danger" style="width: 49%;" role="button">Sign In</a>
+                    <a class="btn btn-info" style="width: 49%;" role="button" href="register.html">Register</a>
+                </div>
+                <div class="row text-center p-2">
+                    <div class="col-3">
+                        <a href="#" class="btn btn-primary btn-block btn-facebook" role="button">
+                            <i class="fab fa-facebook"></i>
+                            <span>&nbsp; Login with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="btn btn-primary btn-block btn-twitter" role="button">
+                            <i class="fab fa-twitter"></i>
+                            <span>&nbsp; Login with Twitter</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="btn btn-danger btn-block btn-google" role="button">
+                            <i class="fab fa-google"></i>
+                            <span>&nbsp; Login with Gmail</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="btn btn-success btn-block btn-wechat" role="button">
+                            <i class="fab fa-weixin"></i>
+                            <span>&nbsp; Login with Wechat</span>
+                        </a>
+                    </div>
+                </div>
+            </form>
+            
+    	</div>
+        <div class="baror">
+        </div>
+    </div>
+</body>
+</html>

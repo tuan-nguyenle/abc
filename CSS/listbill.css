@@ -1,0 +1,152 @@
+body{
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",Helvetica, Arial, sans-serif;
+}
+.totals-item label{
+color: rgb(110, 107, 107);
+}
+.product .product-image {
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.product .product-details {
+float: left;
+width: 49%;
+margin-right: 1%;
+}
+.product .product-price {
+margin-top: 4%;
+height: 100%;
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.product .product-quantity {
+float: left;
+margin-top: 4%;
+width: 9%;
+margin-right: 1%;
+}
+.product .product-removal {
+float: left;
+width: 9%;
+margin-top: 4%;
+margin-right: 1%;
+}
+.product .product-line-price {
+float: left;
+width: 9%;
+margin-top: 4%;
+text-align: right;
+margin-right: 1%;
+}
+.shopping-cart, .column-labels, .product, .totals-item .group:after,
+.group:after {
+content: '';
+display: table;
+} 
+.shopping-cart, .column-labels, .product, .totals-item .group:after {
+clear: both;
+}
+.shopping-cart, .column-labels, .product, .totals-item .group {
+zoom: 1;
+}
+.column-labels .product-image {
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.column-labels .product-details {
+float: left;
+width: 49%;
+margin-right: 1%;
+}
+.column-labels .product-price {
+height: 100%;
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.column-labels .product-quantity {
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.column-labels .product-removal {
+float: left;
+width: 9%;
+margin-right: 1%;
+}
+.column-labels .product-line-price {
+float: left;
+width: 9%;
+text-align: right;
+margin-right: 1%;
+}
+.product .product-price:after, .product .product-line-price:after, .totals-value:after {
+content: 'VNĐ';
+}
+.shopping-cart {
+margin-top: 1%;
+}
+.product {
+padding: 1%;
+margin-bottom: 20px;
+border: 1px solid #eee;}  
+.product .product-image {
+text-align: center;
+}
+.product .product-image img{
+width: 100px;
+}
+.product-details .product-title {
+font-size: 20px;
+margin-right: 20px;
+}
+.product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+}
+.product-quantity input {
+    width: 60px;
+    height: 23px;
+    text-align: center;
+}
+.column-labels{
+width: 100%;
+} 
+.column-labels label {
+margin-bottom: 15px;
+}
+.remove-product {
+border: 0;
+padding: 4px 8px;
+background-color: #c66;
+color: #fff;
+font-size: 12px;
+border-radius: 3px;
+height: 23px;
+}
+
+.remove-product:hover {
+background-color: #a44;
+}
+.totals .totals-item {
+float: right;
+clear: both;
+width: 100%;
+margin-bottom: 10px;
+font-family: "HelveticaNeue-Medium","Helvetica Neue Medium";
+}
+.totals .totals-item label {
+float: left;
+clear: both;
+width: 79%;
+text-align: right;
+}
+
+.totals .totals-item .totals-value {
+float: right;
+width: 21%;
+text-align: right;
+}

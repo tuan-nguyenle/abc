@@ -1,0 +1,47 @@
+.column {
+float: left;
+width: 33.33%;
+display: none;
+}
+.column:before {
+    content: "";
+    float: left;
+    width: 33.33%;
+    display: block;
+}
+.column:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Content */
+.content {
+background-color: white;
+padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+display: block;
+}
+/* Style the buttons */
+.btn.active {
+background-color: #666;
+color: white;
+}
+#backtotopmenufixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 64px;
+    height: 64px;
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    background-image: url(top.png);
+   }
+   
+#backtotopmenufixed:hover{
+    opacity: 0.7;
+   }

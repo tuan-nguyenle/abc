@@ -1,0 +1,250 @@
+
+.mess{
+    left: -90%;
+    width: 300%;
+    height: auto;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+#avatar{
+    border-radius: 50%;
+    height: 100%;
+ }
+#messenger{
+    height: 30px;
+    max-width: 100%;
+    overflow: hidden;
+    color: #b0b3b8;
+}
+#mid-messenger a:hover{
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    transform: scale(0.95);
+}
+#list-messenger{
+    color: #000;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow: hidden;
+}
+.product {
+    border: 1px solid #000;
+    background-color: whitesmoke;
+}
+#menu-taskbar li{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 100%;
+}
+#menu-taskbar a{
+    color: whitesmoke;
+}
+#menu-taskbar > li:hover{
+    background-color: coral;
+}
+#taskbar-dropbar-cat{
+    background-image: url("../IMG/ironman.jpg");
+}
+#taskbar-dropbar-cat a{
+    color: black;
+}
+#taskbar-dropbar-cat a:hover{
+    color: darkgoldenrod;
+}
+#taskbar-dropbar-top a{
+    color: black;
+}
+#taskbar-dropbar-top a:hover{
+    color: darkgoldenrod;
+}
+#taskbar-dropbar-top{
+    background-image: url("../IMG/superhero.jpg");
+    background-color: white;
+}
+#text-content{
+    padding: 1%;
+}
+#text-product{
+    color: black;
+}
+#text-product :hover{
+    color: red;
+}
+.zoom{
+    padding: 1px;
+}
+.zoom:hover {
+    transform: scale(1.05);
+}
+.more-info {
+    position: absolute;
+    display: none;
+    border:1px solid #000;
+    border-left: none;
+    font-size: 15px;
+    left: 100%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 1%;
+    z-index: 1;
+}
+.more-info-1 {
+    display: none;
+    border:1px solid #000;
+    border-right: none;
+    font-size: 15px;
+    right: 100%;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 1%;
+    z-index: 1;
+}
+.more-info-1 .title-more{
+    font-size:25px;
+    font-weight:700;
+    color:#f18121;
+    letter-spacing:normal;
+    margin-top:0;
+    padding: 1%;
+}
+.more-info-1 .title-more-other{
+    padding: 1%;
+    font-weight:500;
+    letter-spacing:normal;
+    color:#757575;
+    line-height:1;
+    margin-top:5px;
+    margin-bottom:10px
+}
+.more-info-1 .info{
+    padding: 1%;
+    font-size:15px;
+    font-weight:500;
+    line-height:1.5;
+    color:#000
+}
+.more-info-1 .list-tags{
+    padding: 5%;
+    margin:10px;
+    font-size:10px;
+}
+.more-info-1 .excerpt{
+    padding: 1%;
+    font-size:15px;
+    font-weight:500;
+    color:#000;
+}
+.more-info .title-more{
+    font-size:25px;
+    font-weight:700;
+    color:#f18121;
+    letter-spacing:normal;
+    margin-top:0;
+    padding: 1%;
+}
+.more-info .title-more-other{
+    padding: 1%;
+    font-weight:500;
+    letter-spacing:normal;
+    color:#757575;
+    line-height:1;
+    margin-top:5px;
+    margin-bottom:10px
+}
+.more-info .info{
+    padding: 1%;
+    font-size:15px;
+    font-weight:500;
+    line-height:1.5;
+    color:#000
+}
+.more-info .list-tags{
+    padding: 5%;
+    margin:10px;
+    font-size:10px;
+}
+.more-info .excerpt{
+    padding: 1%;
+    font-size:15px;
+    font-weight:500;
+    color:#000;
+}
+#a_footer{
+    text-decoration: none;
+}
+footer{
+    background-image: url("../IMG/background.png");
+    width: 100%;
+    height: 100%;
+}
+.breadcrumb {
+    padding: 0px;
+	list-style: none; 
+	overflow: hidden;
+    margin-top: 20px;
+}
+.breadcrumb>li+li:before {
+	padding: 0;
+}
+.breadcrumb li { 
+	float: left; 
+}
+.breadcrumb li.active a {
+	background: #f8f9fa ;
+    color: black;
+}
+.breadcrumb li.breadcrumb--item a {
+	background: #f8f9fa; 
+}
+.breadcrumb li.breadcrumb--item a:after {
+	border-left: 30px solid #f8f9fa;
+} 
+
+.breadcrumb li a {
+	color: black;
+	text-decoration: none; 
+	padding: 10px 0 10px 45px;
+	position: relative; 
+	display: block;
+	float: left;
+}
+.breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid #f8f9fa;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}	
+.breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid black;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}	
+.breadcrumb li:first-child a {
+	padding-left: 15px;
+}
+.breadcrumb li a:hover { background: coral  ; }
+.breadcrumb li a:hover:after { border-left-color: coral   !important; }

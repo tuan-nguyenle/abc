@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/stylebyme.css">
+    <link rel="stylesheet" href="../CSS/listbill.css">
+    <script src="../CSS/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/listbill.js"></script>
+    <title>List Bill</title>
+</head>
+<body style="background-color: gainsboro;">
+    <div class="container-fluid" style="background-color: white;padding: 1%;">
+        <header class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="../IMG/Banner.png" alt="" style="width: 90%;height: 90%;"></a>
+                </div>
+                <div class="col-4 input-group" style="padding-top: 1%;height: 50%;">
+                    <input type="text" class="form-control" placeholder="Search everything in here">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row">
+                        <nav class="nav navbar-expand-sm" style="width: 100%;">
+                            <div class="navbar navbar-collapse justify-content-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ
+                                        <i class="fas fa-home"></i>
+                                    </a></li>
+                                    <li class="dropdown"><a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown">Tin Nhắn
+                                        <i class="fab fa-facebook-messenger"></i></a>
+                                        <div class="mess dropdown-menu justify-content-end">
+                                            <div class="container">
+                                                <div class="title-messages"><h4> <b> Messenger </b></h4></div>
+                                            </div>
+                                            <hr>
+                                            <div class="container" id="mid-messenger">
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Arsene Wenger.png" alt="Arsene Wenger" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Arsene Wenger</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Do you want to join Arsenal ?</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Rosé.jpg" alt="chaeyoung" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Rosé</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>From Korea with love &nbsp;<i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/1.jpg" alt="thao" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Thanh Thanh Thảo</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>You : Chị ngủ Ngon nhé &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/2.jpg" alt="oanh" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Ngọc Oanh</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Hời....</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Yoona.png" alt="Yoona" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Yoona</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>팔로우 해주셔서 감사합니다 &nbsp; <i class="fab fa-itunes-note"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Zhao Li Ying.png" alt="Zhao Li Ying" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Zanilia Zhao</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>你好 &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Tom_Holland_by_Gage_Skidmore.jpg" alt="spider" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Tom Holland</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>I am Spider Man &nbsp; <i class="fas fa-spider"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="messenger-footer justify-content-end text-center">
+                                                <hr>
+                                                <a class="zoom" href="messenger.html" class="nav-link">See All In Messenger</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thông tin người dùng
+                                        <i class="fa fa-user"></i></a>
+                                        <div class="dropdown-menu text-center">
+                                            <a href="myinfo.html" class="nav-link zoom">Thông tin cá nhân</a>
+                                            <a href="changepassword.html" class="nav-link zoom">Đổi Mật Khẩu</a>
+                                            <a href="listbill.html" class="nav-link zoom">Giỏ hàng</a>
+                                            <hr>
+                                            <a href="#" class="nav-link zoom">Đăng Xuất</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid bg-danger text-center">
+        <div class="container">
+            <nav class="nav navbar-expand-sm">
+                <div class="nav navbar-collapse justify-content-center">
+                    <ul class="navbar-nav" id="menu-taskbar">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                        <li class="dropdown"><a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Chọn Thể Loại Truyện</a>
+                            <div class="dropdown-menu text-center" id="taskbar-dropbar-cat">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="nav justify-content-center text-center">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Action</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Marvel</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Tragedy</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Manhua</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">School</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="nav justify-content-center text-center">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Romance</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Fantasy</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Magic</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">DC</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Shounen</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Các Truyện Đứng Top</a>
+                            <div class="dropdown-menu text-center" id="taskbar-dropbar-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="nav text-left">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Yêu Thích</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Ngày</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Tuần</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Tháng</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Truyện Mới</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="listbill.html" class="nav-link">Giỏ Hàng</a></li>
+                        <li class="nav-item"><a href="intro.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="https://www.facebook.com/lnt.2512/" class="nav-link">Fanpage</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Đăng Nhập</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link">Đăng kí</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container bg-light" style="margin-top: 1%;margin-bottom: 1%;">
+        <h1>Shopping Cart</h1>
+        <div class="shopping-cart">
+            <div class="column-labels">
+                <label class="product-image">Product</label>
+                <label class="product-details">Describe</label>
+                <label class="product-price">Price</label>
+                <label class="product-quantity">Quantity</label>
+                <label class="product-removal">Remove</label>
+                <label class="product-line-price">Total</label>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="../IMG/album bp.jpg">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"><b>Album BlackPink</b></div>
+                    <p class="product-description">Kill This Love (stylized in all caps) is the second Korean-language extended play 
+                        (third overall) by South Korean girl group Blackpink, released on April 5, 2019, by YG Entertainment and Interscope Records.
+                    </p>
+                </div>
+                <div class="product-price">500.000</div>
+                <div class="product-quantity">
+                    <input type="number" value="2" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">1000.000</div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="../IMG/Harry Potter 3.jpg">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"><b>Harry Potter and the Prisoner of Azkaban</b></div>
+                    <p class="product-description">Azkaban is a fortress on an island in the middle of the North Sea.
+                         It serves the magical community of Great Britain as a prison for convicted criminals.
+                          Azkaban was built in the 15th century and it has been in use as a detention facility since 1718. 
+                          Using certain Charms, Azkaban is hidden from the Muggle world, and is Unplottable.</p>
+                </div>
+                <div class="product-price">126.065</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">126.065</div>
+            </div>
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">1.126.065</div>
+                </div>
+                <div class="totals-item">
+                    <label>Tax (5%)</label>
+                    <div class="totals-value" id="cart-tax">56.303</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                    <label>Grand Total</label>
+                    <div class="totals-value" id="cart-total">1.197.368</div>
+                </div>
+            </div>
+            <a href="checkout.html" class="btn btn-outline-danger mr-3 mb-2" style="float: right;">Checkout</a>
+        </div>
+    </div>
+    <footer class="page-footer font-small mdb-color pt-4" style="background-color: white;">
+        <div class="container-fluid text-center">
+            <div class="row text-center mt-3 pb-3">
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Thảo Store</h6>
+                    <p>Members : </p>
+                    <p>Lê Nguyễn Tuân</p>
+                    <p>19503891</p>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p><a href="category.html" id="a_footer">Truyện Bán Chạy</a></p>
+                    <p><a href="category.html" id="a_footer">Truyện yêu Thích</a></p>
+                    <p><a href="#!"></a></p>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i>46 Nguyễn Đức Cảnh</p>
+                    <p><i class="fas fa-envelope mr-3"></i>nhabao706@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i>+0869236512</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-left">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/">
+                        <strong> MDBootstrap.com</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4 ml-lg-0">    
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/lnt.2512/">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/?lang=vi">
+                                <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://mail.google.com/mail/u/0/#inbox">
+                                <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>    
+</body>
+</html>

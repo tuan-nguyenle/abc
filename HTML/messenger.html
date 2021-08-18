@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+	<link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/stylebyme.css">
+    <link rel="stylesheet" href="../CSS/messenger.css">
+    
+    <script src="../CSS/fontawesome-free-5.15.3-web/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/messenger.js"></script>
+</head>
+<body">
+    <div class="container-fluid" style="background-color: #242526;padding: 1%;">
+        <header class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="../IMG/Banner.png" alt="" style="width: 90%;height: 90%;"></a>
+                </div>
+                <div class="col-4 input-group" style="padding-top: 1%;height: 50%;">
+                    <input type="text" class="form-control" placeholder="Search everything in here">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row">
+                        <nav class="nav navbar-expand-sm" style="width: 100%;">
+                            <div class="navbar navbar-collapse justify-content-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ
+                                        <i class="fas fa-home"></i>
+                                    </a></li>
+                                    <li class="dropdown"><a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown">Tin Nhắn
+                                        <i class="fab fa-facebook-messenger"></i></a>
+                                        <div class="mess dropdown-menu justify-content-end">
+                                            <div class="container">
+                                                <div class="title-messages"><h4> <b> Messenger </b></h4></div>
+                                            </div>
+                                            <hr>
+                                            <div class="container" id="mid-messenger">
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Arsene Wenger.png" alt="Arsene Wenger" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Arsene Wenger</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Do you want to join Arsenal ?</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Rosé.jpg" alt="chaeyoung" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Rosé</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>From Korea with love &nbsp;<i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/1.jpg" alt="thao" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Thanh Thanh Thảo</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>You : Chị ngủ Ngon nhé &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/2.jpg" alt="oanh" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Ngọc Oanh</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Hời....</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Yoona.png" alt="Yoona" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Yoona</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>팔로우 해주셔서 감사합니다 &nbsp; <i class="fab fa-itunes-note"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Zhao Li Ying.png" alt="Zhao Li Ying" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Zanilia Zhao</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>你好 &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Tom_Holland_by_Gage_Skidmore.jpg" alt="spider" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Tom Holland</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>I am Spider Man &nbsp; <i class="fas fa-spider"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="messenger-footer justify-content-end text-center">
+                                                <hr>
+                                                <a class="zoom" href="messenger.html" class="nav-link">See All In Messenger</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thông tin người dùng
+                                        <i class="fa fa-user"></i></a>
+                                        <div class="dropdown-menu text-center infomation">
+                                            <a href="myinfo.html" class="nav-link zoom">Thông tin cá nhân</a>
+                                            <a href="changepassword.html" class="nav-link zoom">Đổi Mật Khẩu</a>
+                                            <a href="listbill.html" class="nav-link zoom">Giỏ hàng</a>
+                                            <hr>
+                                            <a href="#" class="nav-link zoom">Đăng Xuất</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+<div id="frame" class="container-fluid" style="border-top: 1px solid #363738;">
+	<div id="sidepanel" style="border-right: 1px solid #363738;">
+		<div id="profile">
+			<div class="wrap">
+				<img id="profile-img" src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" class="online col-3" alt="" />
+				<b>Lê Nguyễn Tuân</b>
+				<i class="fa fa-chevron-down expand-button text-right" aria-hidden="true" role="button" style="color: #d1d5da;"></i>
+				<div id="status-options">
+					<ul>
+						<li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
+						<li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
+						<li id="status-busy"><span class="status-circle"></span> <p>Busy</p></li>
+						<li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+					</ul>
+				</div>
+				<div id="expanded">
+					<label for="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></label>
+					<input name="Facebook" type="text" value="Lê Nguyễn Tuân" />
+					<label for="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></label>
+					<input name="twitter" type="text" value="Tuan2512" />
+					<label for="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></label>
+					<input name="Instagram" type="text" value="_tunqq_2512_" />
+				</div>
+			</div>
+		</div>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search message" style="background-color: #3a3b3c;">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+		</div>
+		<div id="contacts">
+			<ul>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status online"></span>
+						<img class="col-3" src="../IMG/Arsene Wenger.png" alt="" style="width: 100%; height: 100%;"/>
+						<div class="meta col-12">
+							<b class="name">Arsene Wenger</b>
+							<p class="preview">Do you want to join Arsenal?</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact active">
+					<div class="wrap ">
+						<span class="row contact-status busy"></span>
+						<img class="col-3" src="../IMG/1.jpg" alt="" />
+						<div class="meta col-12">
+							<b class="name">Lê Thanh Thảo</b>
+							<p class="preview">Nhớ nha :)))</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status away"></span>
+						<img class="col-3" src="../IMG/Rosé.jpg" alt="" style="height : 50px;" />
+						<div class="meta col-12">
+							<b class="name">Rosé</b>
+							<p class="preview">I'm Rosé from Blackpink .Hello Tuân</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status online"></span>
+						<img class="col-3" src="../IMG/2.jpg" alt="" />
+						<div class="meta col-12">
+							<b class="name">Ngọc Oanh</b>
+							<p class="preview"><span>You:</span> Đây là người iu Sỹ Trần.</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status busy"></span>
+						<img class="col-3" src="../IMG/Yoona.png" alt="" />
+						<div class="meta col-12">
+							<b class="name">I'm Yoona</b>
+							<p class="preview">From Korea with love</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status"></span>
+						<img class="col-3" src="../IMG/3.jpg" alt="" />
+						<div class="meta col-12">
+							<b class="name">Trần Văn Sỹ</b>
+							<p class="preview"><span>You:</span> Đây là người iu Ngọc Oanh.</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status"></span>
+						<img class="col-3" src="../IMG/5.jpg" alt="" />
+						<div class="meta col-12">
+							<b class="name">Nguyễn Khánh Linh</b>
+							<p class="preview">Tao là đàn ông not đàn bà.</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status busy"></span>
+						<img class="col-3" src="../IMG/4.jpg" alt="" />
+						<div class="meta col-12">
+							<b class="name">Cục cưng của tưng</b>
+							<p class="preview"><span>You:</span> Hí E iu.</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<div class="wrap ">
+						<span class="row contact-status busy"></span>
+						<img class="col-3" src="../IMG/Bảo đĩ.png" alt="" />
+						<div class="meta col-12">
+							<b class="name">Bảo đĩ</b>
+							<p class="preview"><span>You:</span> Bớt cho t ăn cơm chó lại.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="bottom-bar">
+			<button id="addcontact"><i class="fas fa-edit" aria-hidden="true"></i> <span>New Message</span></button>
+			<button id="settings"><i class="fa fa-user-friends" aria-hidden="true"></i> <span>Friend (56) &nbsp; <i class="fa fa-circle" style="color: #31a24c;height: 6%;width: 6%;"></i></span></button>
+		</div>
+	</div>
+	<div class="content">
+		<div class="contact-profile">
+			<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+			<b>Lê Nguyễn Tuân</b>
+			<div class="social-media">
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="messages">
+			<ul>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>Hey !!</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>?</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>I love you so much</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>Do you know it ?</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>I'm know that. But i'm very sorry ...I can't accept your love now.</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>I'm sorry about that</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>Nothing</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>I say these things to comfort myself</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>I hope someone can get your love from you better than me</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>I hope we can still be friends</p>
+				</li>
+				<li class="sent">
+					<img src="../IMG/vẻ đẹp nằm trong đôi mắt kẻ si tình.jpg" alt="" />
+					<p>I don't want to lose this friendship</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>Of Course</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>Give me your hand</p>
+				</li>
+				<li class="replies">
+					<img src="../IMG/1.jpg" alt="" />
+					<p>Let's be together forever </p>
+				</li>
+			</ul>
+		</div>
+		<div class="message-input">
+			<div class="wrap" style="padding-left: 0.5%;">
+				<input class="input-group-append" type="text" placeholder="Write your message..." style="border-radius: 50px;padding-left: 1%;" />
+				<button class="btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+				<button class="btn"><i class="fa fa-paperclip attachment" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

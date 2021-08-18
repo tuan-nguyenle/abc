@@ -1,0 +1,7 @@
+.active{
+    color: red;
+}
+.container-fluid .container .col-3 .navbar .navbar-nav li:hover{
+    background-color: #b0b3b8;
+    transform: scaleX(1.05);
+}

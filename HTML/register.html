@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../CSS/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <title>Register</title>
+    <style>
+        .container{
+            border-radius: 15px;
+            box-shadow:15px 20px 0px rgba(0,0,0,0.1)
+        }
+        .colorgraph {
+            height: 5px;
+            border-top: 0;
+            background: #c4e17f;
+            border-radius: 5px;
+            background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+            background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        }
+        #erpassword,#errepass,#eremail,#erfull_name{
+            color: red;
+        }
+    </style>
+    <script>
+        $(Document).ready(function(){
+        var pass= $('#password')
+        var cpass= $('#re_pass')
+            function verifyPassword() {  
+                if(pass.val() == "") {  
+                    $('#erpassword').html('Vui lòng không để trống')
+                return false;  
+                }  
+                if(pass.val().length < 8) {  
+                    $('#erpassword').html('Mật khẩu phải > 8 ký tự')
+                return false;  
+                }  
+                if(pass.val().length > 15) {  
+                    $('#erpassword').html('Mật khẩu phải < 15 ký tự')
+                return false;  
+                } else {  
+                    $('#erpassword').html("")
+                    return true
+                }  
+            }
+            pass.blur( () => {
+                verifyPassword()
+            })
+            function matchPassword() {  
+                if(cpass.val() != pass.val())  
+                {   
+                    $('#erre_pass').html('Mật Khẩu không khớp')
+                    return false
+                } else {  
+                    $('#erre_pass').html("")
+                    return true
+                }
+                }
+            cpass.blur(() => {
+                matchPassword()
+            })
+            var name = $('#full_name');
+            checkName = () => {
+                var reg = /^([A-Z]+[a-z]*)((\s)([A-Z]+[a-z]*))*$/
+                if(name.val().length == 0) {
+                    $('#erfull_name').html('Vui Lòng không bỏ trống trường này')
+                    return false
+                }
+                if (reg.test(name.val())) {
+                    $('#erfull_name').html("")
+                    return true
+                }
+                else {
+                    $('#erfull_name').html('Tên Không đúng định dạng vui lòng nhập lại')
+                    return false
+                }
+            }
+            name.blur( () => {
+                checkName()
+            })
+            var mail = $("#email");
+            function ktemail(){
+                var rex=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if(rex.test(mail.val())){
+                    $('#eremail').html("");
+                    return true;
+                }else{
+                    $('#eremail').html("Yêu cầu nhập lại email");
+                    return true;
+                }
+            }
+            $('#email').blur(ktemail)
+        })
+    </script>
+</head>
+<body style="background-color: gainsboro;">
+    <div class="container bg-light" style="margin-top: 2%;">
+        <div class="text-center" style="padding-top: 1%;">
+            <a href="index.html"><img src="../IMG/Banner.png" alt="" height="35%" width="35%"></a>
+        </div>
+        <div class="row justify-content-center p-3">
+            <div class="col-8">
+                <form role="form">
+                    <h2>Please Sign Up With US &emsp;<small>Because it's free</small></h2>
+                    <hr class="colorgraph">
+                    <div class="form-group">
+                        <input type="text" name="full_name" id="full_name" class="form-control input-lg" placeholder="Full Name" tabindex="3">
+                        <span id="erfull_name"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                        <span id="eremail"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                <span id="erpassword"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="re_pass" id="re_pass" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                <span id="erre_pass"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="button-checkbox">
+                                <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">&emsp;I Agree with Terms and Conditions
+                            </span>
+                        </div>
+                        <div class="col-6">
+                             By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                        </div>
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                        <div class="col-xs-12 col-md-6"><a href="login.html" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="t_and_c_m" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>  
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                        <p>[Lê Thanh Thảo] [10-09-1999] [Ea Kar] [Đắk Lắk] [Buôn Mê Thuộc]</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

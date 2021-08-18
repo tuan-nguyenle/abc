@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome-free-5.15.3-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/stylebyme.css">
+    <script src="../CSS/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/myscript.js"></script>
+    <title>Thảo Store</title>
+</head>
+<body style="background-color: gainsboro;">
+    <div class="container-fluid" style="background-color: white;padding: 1%;">
+        <header class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="../IMG/Banner.png" alt="" style="width: 90%;height: 90%;"></a>
+                </div>
+                <div class="col-4 input-group" style="padding-top: 1%;height: 50%;">
+                    <input type="text" class="form-control" placeholder="Search everything in here">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row">
+                        <nav class="nav navbar-expand-sm" style="width: 100%;">
+                            <div class="navbar navbar-collapse justify-content-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ
+                                        <i class="fas fa-home"></i>
+                                    </a></li>
+                                    <li class="dropdown"><a href="#"class="nav-link dropdown-toggle" data-toggle="dropdown">Tin Nhắn
+                                        <i class="fab fa-facebook-messenger"></i></a>
+                                        <div class="mess dropdown-menu justify-content-end">
+                                            <div class="container">
+                                                <div class="title-messages"><h4> <b> Messenger </b></h4></div>
+                                            </div>
+                                            <hr>
+                                            <div class="container" id="mid-messenger">
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Arsene Wenger.png" alt="Arsene Wenger" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Arsene Wenger</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Do you want to join Arsenal ?</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Rosé.jpg" alt="chaeyoung" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Rosé</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>From Korea with love &nbsp;<i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/1.jpg" alt="thao" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Thanh Thanh Thảo</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>You : Chị ngủ Ngon nhé &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/2.jpg" alt="oanh" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Ngọc Oanh</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>Hời....</p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Yoona.png" alt="Yoona" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Yoona</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>팔로우 해주셔서 감사합니다 &nbsp; <i class="fab fa-itunes-note"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Zhao Li Ying.png" alt="Zhao Li Ying" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Zanilia Zhao</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>你好 &nbsp; <i class="fa fa-heart"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="row" id="list-messenger" role="button" href="messenger.html">
+                                                    <div class="col-4">
+                                                        <img id="avatar" src="../IMG/Tom_Holland_by_Gage_Skidmore.jpg" alt="spider" height="80%" width="80%">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row name">
+                                                            <span><b>Tom Holland</b></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span id="messenger"><p>I am Spider Man &nbsp; <i class="fas fa-spider"></i> </p></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="messenger-footer justify-content-end text-center">
+                                                <hr>
+                                                <a class="zoom" href="messenger.html" class="nav-link">See All In Messenger</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thông tin người dùng
+                                        <i class="fa fa-user"></i></a>
+                                        <div class="dropdown-menu text-center">
+                                            <a href="myinfo.html" class="nav-link zoom">Thông tin cá nhân</a>
+                                            <a href="changepassword.html" class="nav-link zoom">Đổi Mật Khẩu</a>
+                                            <a href="listbill.html" class="nav-link zoom">Giỏ hàng</a>
+                                            <hr>
+                                            <a href="#" class="nav-link zoom">Đăng Xuất</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid bg-danger text-center">
+        <div class="container">
+            <nav class="nav navbar-expand-sm">
+                <div class="nav navbar-collapse justify-content-center">
+                    <ul class="navbar-nav" id="menu-taskbar">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+                        <li class="dropdown"><a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Chọn Thể Loại Truyện</a>
+                            <div class="dropdown-menu text-center" id="taskbar-dropbar-cat">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="nav justify-content-center text-center">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Action</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Marvel</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Tragedy</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Manhua</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">School</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="nav justify-content-center text-center">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Romance</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Fantasy</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Magic</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">DC</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Shounen</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Các Truyện Đứng Top</a>
+                            <div class="dropdown-menu text-center" id="taskbar-dropbar-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="nav text-left">
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Yêu Thích</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Ngày</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Tuần</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Top Tháng</a></li>
+                                                <li class="nav-item"><a href="category.html" class="nav-link zoom">Truyện Mới</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="listbill.html" class="nav-link">Giỏ Hàng</a></li>
+                        <li class="nav-item"><a href="intro.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="https://www.facebook.com/lnt.2512/" class="nav-link">Fanpage</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Đăng Nhập</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link">Đăng kí</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid">
+            <div class="container" style="width: 31%;padding-top: 1%;">
+                <a href="category.html" class="nav-link text-center zoom">
+                <h2><i class="fas fa-book-reader"></i> Sản Phẩm Bán Chạy <i class="fas fa-book-reader"></i> </h2></a>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/conan1.jpg'" onmouseout="this.src='../IMG/conan.jpg'" src="../IMG/conan.jpg" alt="conan" id="view-more-info" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Detective Conan</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>     
+                    <div class="more-info" id="more-info">
+                        <div class="title-more">Detective Conan</div>
+                        <div class="title-more-other">Thám tử lừng danh Conan</div>
+                        <div class="info">Tác giả : Aoyama Gōshō</div>
+                        <div class="info">Lượt Mua : 503 người</div>
+                        <div class="info">Lượt Xem : 10,050 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">School</a>
+                            <a href="category.html" class="">Romance</a>
+                            <a href="category.html" class="">Action</a>
+                        </div>
+                        <div class="excerpt">
+                            "Nhân vật chính của truyện là một thám tử học sinh trung học có tên là Kudo Shinichi, 
+                            người đã bị biến thành một cậu bé cỡ học sinh tiểu học và luôn cố gắng truy tìm tung tích tổ chức Áo Đen
+                            nhằm lấy lại hình dáng cũ."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/one piece1.jpg'" onmouseout="this.src='../IMG/one piece.jpg'"src="../IMG/one piece.jpg" alt="" id="view-more-info-1" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>One Piece</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-1">
+                        <div class="title-more">One Piece</div>
+                        <div class="title-more-other">Đảo Hải Tặc</div>
+                        <div class="info">Tác giả : Eiichiro Oda</div>
+                        <div class="info">Lượt Mua : 155,027 người</div>
+                        <div class="info">Lượt Xem : 10,090,199 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                        </div>
+                        <div class="excerpt">
+                            "One Piece là câu truyện kể về Luffy và các thuyền viên của mình.
+                             Khi còn nhỏ, Luffy ước mơ trở thành Vua Hải Tặc.
+                               Giờ đây, Luffy cùng những người bạn hải tặc của mình ra khơi tìm kiếm kho báu One Piece,
+                                kho báu vĩ đại nhất trên thế giới."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/onepunch man1.jpg'" onmouseout="this.src='../IMG/onepunch man.jpg'" src="../IMG/onepunch man.jpg" alt="" id="view-more-info-2" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>One Punch Man</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-2">
+                        <div class="title-more">One Punch Man</div>
+                        <div class="title-more-other">Đấm Phát Chết Luôn</div>
+                        <div class="info">Tác giả : Murata Yuusuke</div>
+                        <div class="info">Lượt Mua : 25,120 người</div>
+                        <div class="info">Lượt Xem : 25,122,001 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Onepunch-Man là một Manga thể loại siêu anh hùng với đặc trưng phồng tôm đấm phát chết luôn… 
+                            Lol!!! Nhân vật chính trong Onepunch-man là Saitama, một con người mà nhìn đâu cũng thấy “tầm thường”, từ khuôn mặt vô hồn, 
+                            cái đầu trọc lóc, cho tới thể hình long tong...."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/naruto1.jpg'" onmouseout="this.src='../IMG/naruto.jpg'" src="../IMG/naruto.jpg" alt=""class="zoom"id="view-more-info-3" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Naruto</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-3">
+                        <div class="title-more">Naruto</div>
+                        <div class="title-more-other">Naruto</div>
+                        <div class="info">Tác giả : Kishimoto Mashashi</div>
+                        <div class="info">Lượt Mua : 122,146 người</div>
+                        <div class="info">Lượt Xem : 23,158,956 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Naruto là một cậu bé có mơ ước trở thành hokage của làng Konoha,
+                            được Hokage phong ấn trong người một trong 9 quái vật của thể giới : Cửu vĩ Hồ ly.
+                             Vì cho cậu là một con quái vật, ko ai dám chơi với cậu!& Vì muốn được thừa nhận nên rất phá phách.
+                             Khi tốt ..."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/pokemon1.jpg'" onmouseout="this.src='../IMG/pokemon.jpg'" src="../IMG/pokemon.jpg" alt=""  id="view-more-info-4" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Pokémon Special</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info-1" id="more-info-4">
+                        <div class="title-more">Pokemon Special</div>
+                        <div class="title-more-other">Bửu Bối Thần Kì</div>
+                        <div class="info">Tác giả : Hidenori Kusaka</div>
+                        <div class="info">Lượt Mua : 1,007,326 người</div>
+                        <div class="info">Lượt Xem : 150,236,754 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Truyện được chia thành nhiều Arc tương tự như trong Game.
+                              Mỗi Arc lại kết nối mật thiết với nhau làm thành một bộ Manga với rất nhiều nhân vật và Pokemon đa dạng.
+                               Với nội dung hoàn toàn khác so với Anime, đây hứa hẹn là một trong những bộ truyện hay bạn nên xem"
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <a href="category.html" class="nav-link" style="width: 25%;">
+                    <h5><i class="fab fa-d-and-d"></i>Có Thể Bạn quan tâm : </h5>
+                </a>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/attack-on-titan1.jpg'" onmouseout="this.src='../IMG/attack-on-titan.jpg'" src="../IMG/attack-on-titan.jpg" alt=""  id="view-more-info-5" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Attack on Titan</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-5">
+                        <div class="title-more">Attack on Titan</div>
+                        <div class="title-more-other">Đại chiến Titan</div>
+                        <div class="info">Tác giả : Isayama Hajime</div>
+                        <div class="info">Lượt Mua : 15,147 người</div>
+                        <div class="info">Lượt Xem : 46,145,832 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Fantasy</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Hơn 100 năm trước, giống người khổng lồ Titan đã tấn công và đẩy loài người tới bờ vực tuyệt chủng.
+                             Những con người sống sót tụ tập lại, xây bao quanh mình 1 tòa thành 3 lớp kiên cố và tự nhốt mình bên trong 
+                             để trốn tránh những cuộc tấn công của người khổng lồ...
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/dau-an-rong-thieng1.jpg'" onmouseout="this.src='../IMG/dau-an-rong-thieng.jpg'" src="../IMG/dau-an-rong-thieng.jpg" alt="" id="view-more-info-6" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Dragon Quest</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-6">
+                        <div class="title-more">Dragon Quest</div>
+                        <div class="title-more-other">Dấu ấn rồng thiên</div>
+                        <div class="info">Tác giả : Sanjo Riku</div>
+                        <div class="info">Lượt Mua : 60,868 người</div>
+                        <div class="info">Lượt Xem : 32,665,523 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Fantasy</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Câu chuyện là hành trình của Dai và những đồng đội, những học trò của người anh hùng Avan đi tiêu diệt
+                            ác ma vì chính nghĩa. Là một manga dựa trên game, lại là shounen của thời kì những năm 80s,
+                             nên cốt truyện của Dấu ấn rồng thiêng có một mạch chung là tiêu diệt cái ác để bảo vệ thế giới...
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/ansatsu-kyoushitsu1.jpg'" onmouseout="this.src='../IMG/ansatsu-kyoushitsu.jpg'" src="../IMG/ansatsu-kyoushitsu.jpg" alt="" id="view-more-info-7" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Assassination Classroom</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-7">
+                        <div class="title-more">Assassination</div>
+                        <div class="title-more-other">Lớp học Sát thủ</div>
+                        <div class="info">Tác giả : Matsui Yuusei</div>
+                        <div class="info">Lượt Mua : 77,208 người</div>
+                        <div class="info">Lượt Xem : 90,979,515 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">School Life</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            “Ta là người đã phá huỷ mặt trăng”
+                            “Hãy ám sát ta nếu các ngươi muốn cứu lấy trái đất”.
+                            Một con bạch tuột chẳng biết tự lỗ nào chui lên cứ luôn miệng gào thét hai câu này và đòi làm thầy giáo của đám học sinh cá biệt lớp 3-E. 
+                            Chẳng hiểu hắn đang nghĩ cái quái gì khi bản thân ...
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/dragon-ball-super1.jpg'" onmouseout="this.src='../IMG/dragon-ball-super.jpg'" src="../IMG/dragon-ball-super.jpg" alt="" id="view-more-info-8" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Dragon Ball Super</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-8">
+                        <div class="title-more">Dragon Ball Super</div>
+                        <div class="title-more-other">7 Viên Ngọc Rồng Siêu Cấp</div>
+                        <div class="info">Tác giả : Akira Toriyama</div>
+                        <div class="info">Lượt Mua : 86,733 người</div>
+                        <div class="info">Lượt Xem : 94,424,694 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Shoujo</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Sau khi đánh bại kẻ thù cuối cùng của mình ở phần truyện chính là Majin Buu,
+                             Goku và mọi người đã có một cuộc sống bình yên. Thế nhưng, một mối nguy hiểm mới lại xuất hiện.
+                              Thần hủy diêt Beerus, vị thần mạnh nhất của vũ trụ 7 xuất hiện. 
+                              Sau một giấc ngủ kéo dài nhiều năm, Beerus tỉnh lại...
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/fairy-tail1.jpg'" onmouseout="this.src='../IMG/fairy-tail.jpg'" src="../IMG/fairy-tail.jpg" alt="" id="view-more-info-9" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Fairy Tail</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info-1" id="more-info-9">
+                        <div class="title-more">Fairy Tail</div>
+                        <div class="title-more-other">Hội Pháp Sư</div>
+                        <div class="info">Tác giả : Mashima Hiro</div>
+                        <div class="info">Lượt Mua : 33,445 người</div>
+                        <div class="info">Lượt Xem : 57,286,576 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Lucy là một cô gái 17 tuổi, với giấc mơ trở thành một tinh linh pháp sư thực thụ...
+                            Rồi một ngày cô đến thị trấn Harujion, cô đã gặp Natsu, một thiếu niên có khả năng sử dụng ma thuật lửa.
+                            Nhưng Natsu không phải là một pháp sư thông thường, cậu sử dụng ma thuật cổ đại do một con rồng tên là Igneel dạy dỗ..."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/nanatsu-no-taizai1.jpg'" onmouseout="this.src='../IMG/nanatsu-no-taizai.jpg'" src="../IMG/nanatsu-no-taizai.jpg" alt=""  id="view-more-info-10" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Nanatsu no Taizai</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-10">
+                        <div class="title-more">Nanatsu no Taizai</div>
+                        <div class="title-more-other">Thất Hình Đại Tội</div>
+                        <div class="info">Tác giả : Suzuki Nakaba</div>
+                        <div class="info">Lượt Mua : 97,903 người</div>
+                        <div class="info">Lượt Xem : 25,399,401 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Fantasy</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            ""Thất đại ác nhân", một nhóm chiến binh có tham vọng lật đổ vương quốc Britannia,
+                             được cho là đã bị tiêu diệt bởi các "hiệp sĩ thánh chiến" mặc dù vẫn còn 1 số người 
+                             cho rằng họ vẫn còn sống. 10 năm sau, Các hiệp sĩ thánh chiến đã làm 1 cuộc đảo chính và khống chế đức vua,
+                              họ trở thành người cai trị độc tài mới của ...."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/uzumaki-boruto1.jpg'" onmouseout="this.src='../IMG/uzumaki-boruto.jpg'" src="../IMG/uzumaki-boruto.jpg" alt="" id="view-more-info-11" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Boruto</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-11">
+                        <div class="title-more">Boruto</div>
+                        <div class="title-more-other">Boruto</div>
+                        <div class="info">Tác giả : Kishimoto Mashashi</div>
+                        <div class="info">Lượt Mua : 19,740 người</div>
+                        <div class="info">Lượt Xem : 47,757,655 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Boruto là phần tiếp nối của siêu phẩm Naruto huyền thoại. 
+                            Trong phần này, truyện tập trung vào cậu bé Boruto, con trai của Naruto. 
+                            Truyện mở đầu bằng cảnh làng lá hoang tàn và một nhân vật bí ẩn tuyên bố về cái chết của Naruto 
+                            cùng sự chấm dứt của thời đại Ninja hoàng kim... 
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/yu-gi-oh-vua-tro-choiq.jpg'" onmouseout="this.src='../IMG/yu-gi-oh-vua-tro-choi.jpg'" src="../IMG/yu-gi-oh-vua-tro-choi.jpg" alt="" id="view-more-info-12" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Yu-Gi-Oh</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-12">
+                        <div class="title-more">Yu-Gi-Oh</div>
+                        <div class="title-more-other">Vua Trò Chơi</div>
+                        <div class="info">Tác giả : Kazuki Takahashi</div>
+                        <div class="info">Lượt Mua : 11,273 người</div>
+                        <div class="info">Lượt Xem : 42,181,549 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Mystery</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Phù Thủy Áo Đen, Rồng Trắng Mắt Xanh…. những lá bài ma thuật nổi tiếng không còn gì
+                             là xa lạ đối với các fan của Yugioh. Bộ manga Nhật Bản gây sốt một thời tại các hiệu sách Việt
+                              Nam của tác giả Kazuki Takahashi...
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/inuyasha-khuyen-da-xoa1.jpg'" onmouseout="this.src='../IMG/inuyasha-khuyen-da-xoa.jpg'" src="../IMG/inuyasha-khuyen-da-xoa.jpg" alt="" id="view-more-info-13" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Inuyasha</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info" id="more-info-13">
+                        <div class="title-more">Inuyasha</div>
+                        <div class="title-more-other">Khuyển Dạ Xoa</div>
+                        <div class="info">Tác giả : Rumiko Takahashi</div>
+                        <div class="info">Lượt Mua : 81,828 người</div>
+                        <div class="info">Lượt Xem : 72,864,075 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Adventure</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Romance</a>
+                            <a href="category.html" class="">Shounen</a>
+                        </div>
+                        <div class="excerpt">
+                            "Câu chuyện bắt đầu từ lúc Kagome, vào ngày sinh nhật thứ mười lăm, đã vô tình rơi xuống cái giếng cạn và trở về thời phong kiến của Nhật Bản vào 500 năm trước. Ở đây, cô đã gặp được Inu Yasha
+                            Khi vừa đến nơi đã có một số yêu quái đến tranh giành viên ngọc tứ hồn..."
+                        </div>
+                    </div>
+                </div>
+                <div class="product col-2 mx-4 p-3 mb-5 justify-content-center text-center">
+                    <img class="zoom" onmouseover="this.src='../IMG/shuumatsu-no-valkyrie1.jpg'" onmouseout="this.src='../IMG/shuumatsu-no-valkyrie.jpg'" src="../IMG/shuumatsu-no-valkyrie.jpg" alt="" id="view-more-info-14" role="button">
+                    <a href="detail.html" class="nav-link" id="text-product"><h5>Shuumatsu no Valkyrie</h5></a>
+                    <span>22.000 VNĐ</span>
+                    <a href="detail.html" role="button" class="nav-link zoom">Thêm Vào Giỏ
+                    <i class="fa fa-cart-plus"></i></a>
+                    <div class="more-info-1" id="more-info-14">
+                        <div class="title-more">Shuumatsu no Valkyrie</div>
+                        <div class="title-more-other">Record of Ragnarok</div>
+                        <div class="info">Tác giả : Fukui Takumi</div>
+                        <div class="info">Lượt Mua : 2,704,346 người</div>
+                        <div class="info">Lượt Xem : 682,728,218 người</div>
+                        <div class="list-tag">
+                            <a href="category.html" class="">Historical</a>
+                            <a href="category.html" class="">Action</a>
+                            <a href="category.html" class="">Supernatural</a>
+                        </div>
+                        <div class="excerpt">
+                            "Các vị thần mở hội nghị để bàn về sự sống còn của nhân loại.
+                             Tất cả đều quyết định "kết liễu" con người, chỉ duy một valkyrie đứng lên phản đối bằng cách đề nghị 
+                             1 cuộc chiến giữa thần và người. Cuộc chiến quyết định số phận của nhân loại này sẽ ra sao....."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="btn btn-danger" id="backtotopmenu" style="width: 100%;">Back To Top Menu</button>
+    <footer class="page-footer font-small mdb-color pt-4" style="background-color: white;">
+        <div class="container-fluid text-center">
+            <div class="row text-center mt-3 pb-3">
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Thảo Store</h6>
+                    <p>Members : </p>
+                    <p>Lê Nguyễn Tuân</p>
+                    <p>19503891</p>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p><a href="category.html" id="a_footer">Truyện Bán Chạy</a></p>
+                    <p><a href="category.html" id="a_footer">Truyện yêu Thích</a></p>
+                    <p><a href="#!"></a></p>
+                </div>
+                <div class="col-4">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i>46 Nguyễn Đức Cảnh</p>
+                    <p><i class="fas fa-envelope mr-3"></i>nhabao706@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i>+0869236512</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-left">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/">
+                        <strong> MDBootstrap.com</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4 ml-lg-0">    
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/lnt.2512/">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/?lang=vi">
+                                <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://mail.google.com/mail/u/0/#inbox">
+                                <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -29,3 +29,18 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
+$(function () {
+  $("#myBtnContainer > button").click(function () {
+      $("#myBtnContainer > button").removeClass("active");
+      $(this).addClass("active");
+      return false;
+  });
+  // change is-checked class on buttons
+  $(".button-group").each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on("click", "button", function () {
+          $buttonGroup.find(".active").removeClass("active");
+          $(this).addClass("active");
+      });
+  });
+});

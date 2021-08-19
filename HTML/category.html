@@ -631,42 +631,41 @@
             </div>
         </div>
     </footer>
-    <script>
-        $(function () {
-            $("#myBtnContainer > button").click(function () {
-                $("#myBtnContainer > button").removeClass("active");
-                $(this).addClass("active");
-                return false;
-            });
-            var $grid = $(".grid").isotope({
-                itemSelector: ".column",
-                layoutMode: "fitRows",
-                getSortData: {
-                    name: ".name",
-                    price: function (itemElem) {
-                        var weight = $(itemElem).find(".prices").text();
-                        return parseFloat(prices.replace(/[\(\)]/g, ""));
-                    },
+</body>
+<script>
+    $(function () {
+        $("#myBtnContainer > button").click(function () {
+            $("#myBtnContainer > button").removeClass("active");
+            $(this).addClass("active");
+            return false;
+        });
+        var $grid = $(".grid").isotope({
+            itemSelector: ".column",
+            layoutMode: "fitRows",
+            getSortData: {
+                name: ".name",
+                price: function (itemElem) {
+                    var weight = $(itemElem).find(".prices").text();
+                    return parseFloat(prices.replace(/[\(\)]/g, ""));
                 },
-            });
-            // bind sort button click
-            $("#sorts").on("click", "button", function () {
-                var sortByValue = $(this).attr("data-sort-by");
-                $grid.isotope({
-                    sortBy: sortByValue
-                });
-            });
-            // change is-checked class on buttons
-            $(".button-group").each(function (i, buttonGroup) {
-                var $buttonGroup = $(buttonGroup);
-                $buttonGroup.on("click", "button", function () {
-                    $buttonGroup.find(".active").removeClass("active");
-                    $(this).addClass("active");
-                });
+            },
+        });
+        // bind sort button click
+        $("#sorts").on("click", "button", function () {
+            var sortByValue = $(this).attr("data-sort-by");
+            $grid.isotope({
+                sortBy: sortByValue
             });
         });
-    </script>
-    <script src="../JS/category.js"></script>
-</body>
-
+        // change is-checked class on buttons
+        $(".button-group").each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on("click", "button", function () {
+                $buttonGroup.find(".active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    });
+</script>
+<script src="../JS/category.js"></script>
 </html>
